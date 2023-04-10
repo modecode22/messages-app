@@ -1,3 +1,4 @@
+import Providers from '@/components/Providers'
 import './globals.css'
 
 export const metadata = {
@@ -12,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-gradient-to-br from-slate-50 via-emerald-100 to-teal-300">
+        <Providers>{children}</Providers>
+      </body>
     </html>
-  )
+  );
 }
