@@ -5,17 +5,16 @@ import { Toaster } from "react-hot-toast"
 
 
 interface Props {
-    children: ReactNode
-    
+  children: ReactNode;
 }
 
-const Providers = ({children}:Props) => {
+const Providers = ({ children }: Props) => {
   return (
     <>
-      <Toaster position="top-center" reverseOrder={false} />
-      {children}
+        <Toaster position="top-center" reverseOrder={false} />
+        {children}
     </>
   );
-}
+};
 
 export default Providers
